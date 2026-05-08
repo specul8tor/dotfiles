@@ -1,0 +1,7 @@
+.DS_Store
+
+# Neovim local data/state
+.config/nvim/.neoconf.json
+
+# tmux plugin clones (managed by TPM)
+.config/tmux/plugins/
