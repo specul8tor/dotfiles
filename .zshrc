@@ -29,5 +29,5 @@ fixfork() {
   [ -n "$pids" ] && echo "Raycast helper restarted: $pids"
 }
 
-# OpenClaw Completion
-source "/Users/azaanazam/.openclaw/completions/openclaw.zsh"
+# OpenClaw completion (optional)
+[ -f "$HOME/.openclaw/completions/openclaw.zsh" ] && source "$HOME/.openclaw/completions/openclaw.zsh"
