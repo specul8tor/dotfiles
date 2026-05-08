@@ -1,5 +1,12 @@
 export PATH="$HOME/.local/bin:$PATH"
 
+# SSH fallback: if remote doesn't know this TERM, use a widely supported one.
+if [ -n "${SSH_CONNECTION:-}" ] && [ -n "${TERM:-}" ] && command -v infocmp >/dev/null 2>&1; then
+  if ! infocmp "$TERM" >/dev/null 2>&1; then
+    export TERM="xterm-256color"
+  fi
+fi
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
