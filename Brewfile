@@ -1,6 +1,3 @@
-tap "homebrew/core"
-tap "homebrew/cask"
-
 brew "git"
 brew "gh"
 brew "neovim"
@@ -14,7 +11,6 @@ brew "uv"
 brew "docker"
 brew "mole"
 brew "cmatrix"
-brew "ngrok"
 
 cask "ghostty"
 cask "raycast"
