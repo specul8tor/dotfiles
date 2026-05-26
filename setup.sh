@@ -29,6 +29,7 @@ link_path() {
 link_path "$DOTFILES_DIR/.config/nvim" "$HOME/.config/nvim"
 link_path "$DOTFILES_DIR/.config/tmux" "$HOME/.config/tmux"
 link_path "$DOTFILES_DIR/.config/ghostty/config" "$HOME/Library/Application Support/com.mitchellh.ghostty/config"
+link_path "$DOTFILES_DIR/.zshenv" "$HOME/.zshenv"
 link_path "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
 link_path "$DOTFILES_DIR/.zprofile" "$HOME/.zprofile"
 
